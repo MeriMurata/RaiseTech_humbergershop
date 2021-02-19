@@ -1,0 +1,67 @@
+.p-place-menu{
+    &--takeout{
+        background-image: url(/image/takeout.png);
+        width: 95%;
+        height: 642px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include mq (tablet){
+            width: 45%;  
+            margin-top: 30px;
+        }
+
+        @include mq (pc){
+            height: 1193px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &--eatin{
+        background-image: url(/image/eatin.png);
+        width: 95%;
+        height: 642px;
+        margin-bottom: 49px;
+        margin-right: auto;
+        margin-left: auto;
+        
+        @include mq (tablet){
+            width: 45%;  
+            margin-top: 30px;
+        }
+
+        @include mq (pc){
+            height: 1193px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &--wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 490px;
+
+        @include mq (pc){
+            height: 990px;
+        }
+
+    }
+
+    &__content{
+        width: 95%;
+        height: 163px;
+        background-color:rgba(199, 199, 199, 0.637);
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+}

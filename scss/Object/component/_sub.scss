@@ -1,0 +1,333 @@
+.c-sub{
+
+    &--singlepage{
+     
+        &__blockquote{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: 18px;
+            margin-right: 18px;
+            padding-bottom: 40px;
+            background-color: #F5F5F5;
+
+            &__description{
+                color: #333333;
+                padding-top: 30px;
+                padding-bottom: 28px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            &__link{
+                color: #333333;
+                padding-left: 24px;
+
+                & > a {
+                    font-size: 12px;
+                    font-style: normal;
+                }
+            }
+        }
+
+        & > p {
+            margin-left: 18px;
+            margin-right: 18px;
+        }
+        
+    }
+
+    &--post{
+        &__hero__head{
+            background-image: url(/image/cooked_foods.png);
+            background-position-x: center;
+            background-position-y: 90%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 250px;
+            margin-left: 18px;
+            margin-right: 18px;
+        }
+
+        &__news1{
+            margin-top: 60px;
+            margin-left: 18px;
+            margin-right: 18px;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+
+            &__picture1{
+                width: 40%;
+                height: 100%;
+                margin-right: 10px;
+
+            }
+
+            &__article1{
+                width: 60%;
+                margin-left: 10px;
+                color: #333333;
+
+            }
+        }
+
+        &__news2{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 18px;
+            margin-right: 18px;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row-reverse;
+
+            &__picture2{
+                width: 40%;
+                height: 100%;
+                margin-left: 10px;               
+            }
+
+            &__article2{
+                width: 60%;
+                margin-right: 10px;
+                color: #333333;
+            }
+        }
+
+        &__hero__foot{
+            display: block;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include mq (tablet){
+                max-width: 600px;
+                width: 65%;
+            }
+
+            @include mq (pc){
+                width: 75%;
+            }
+
+        }
+
+    }
+
+    &--card{
+
+        margin-top: 100px;
+        margin-left: 18px;
+        margin-right: 18px;
+
+        display: grid;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        
+        @include mq (tablet){
+            margin-top: 150px;
+            display: grid;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        
+        @include mq (pc){
+            margin-top: 50px;
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        &__picture{
+
+            &__card1{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            &__card2{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;            
+            }
+
+            &__card3{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;            
+            }
+
+            &__card4{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;            
+            }
+
+            &__card5{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            &__card6{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            &__card7{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            &__card8{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+            &__card9{
+                background-image: url(/image/cooked_foods.png);
+                background-position-x: center;
+                background-position-y: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+
+        }
+    
+    }
+
+    &--list{
+        margin-top: 40px;
+        margin-bottom:40px;
+        margin-right: 18px;
+        margin-left: 18px;
+
+        & > ol{
+            margin-left: 50px;
+
+            & > ol{
+                margin-top: 14px;
+                margin-left: 20px;
+                margin-bottom: 14px;
+            }
+        }
+
+        & > ul{
+            margin-top: 70px;
+            margin-left: 30px;
+            list-style: none;
+            & > ul{
+                margin-top: 14px;
+                margin-left: 20px;
+                margin-bottom: 14px;
+                list-style: none;
+            }
+        }
+    }
+
+    &--html-tag{
+        background-color: #F5F5F5;
+
+        & code{
+          font-weight:normal;
+          color: #3C2A10;
+        }
+    }
+
+    &--table{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 18px;
+        margin-right: 18px;
+
+
+        & > table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+
+            & th {
+                padding-top: 20px; 
+                padding-bottom: 20px;
+                padding-left: 20px; 
+                font-weight: normal;
+            }
+
+        }
+
+        &__left{
+            width: 20%;
+        }
+
+        &__right{
+            width: 80%;
+        }
+
+    }
+
+    &--button{
+        margin-left: 18px;
+        margin-right: 18px;
+       
+        & > button{
+            width: 65%;
+            height: 100px;
+            border-radius: 20px;
+            border: solid 1px #3C2A10;
+            color:#3C2A10;
+            background-color: #F2EDE9;
+            transition: background-color 0.5s;
+            cursor: pointer;
+        }
+
+        & > button:hover{
+            background-color: #c7c0bb;
+        }
+
+        @include mq (pc){
+            
+            & > button{
+                width: 45%;
+            }
+        }
+
+    }
+
+    &--bold{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-left: 18px;
+        margin-right: 18px;
+
+        & b {
+            color: #3C2A10;
+        }
+    }
+
+}

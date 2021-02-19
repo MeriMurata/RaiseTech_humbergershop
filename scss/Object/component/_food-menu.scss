@@ -1,0 +1,104 @@
+.c-food-menu{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 460px;
+    height: 500px;
+    background-color: #3C2B1C;
+
+    @include mq (tablet){
+        height: 354px;
+        width: 95vw;
+        display: flex;
+    }
+
+    @include mq (pc){
+        width: 70vw;
+    }
+
+    &__picture{
+        background-image: url(/image/menu1.png);
+        width: 100%;
+        height: 230px;
+        background-position: center;
+        
+        @include mq (tablet){
+            height: 100%;
+        }
+
+    }
+
+    &__content{
+
+        @include mq (tablet){
+            width: 100%;
+        }
+    }
+
+    &__title{
+        color: white;
+        font-weight: normal;
+        padding-top: 25px;
+        padding-left: 10px;
+
+        @include mq (tablet){
+            padding-left: 40px;
+        }
+    }
+
+    &__headline{
+        color: white;
+        font-weight: normal;
+        padding-top: 25px;
+        padding-left: 10px;
+        font-size: 20px;
+
+        @include mq (tablet){
+            padding-left: 40px;
+        }
+
+    }
+
+    &__description{
+        color: white;
+        font-weight: normal;
+        margin-top: 10px;
+        padding-left: 10px;
+
+        @include mq (tablet){
+            margin-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+    }
+
+    &__detail{
+        margin-top: 25px;
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: opacity 0.5s;
+
+        @include mq (tablet){
+            margin-top: 45px;
+
+
+        }
+
+
+    }
+
+    &__detail:hover{
+    opacity: 0.8;
+    }
+
+    &__detail p{
+        text-align: center;
+        line-height: 50px;        
+    }
+}

@@ -1,0 +1,10 @@
+.p-serchform{
+    text-align: center;
+    padding-top: 40px;
+
+    @include mq(pc){
+        padding-top: 80px;
+        padding-right: 50px;
+    }
+
+}

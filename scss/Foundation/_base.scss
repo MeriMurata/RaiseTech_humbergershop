@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'mplus-1m-regular';
+	src: url(/fonts/mplus-1m-regular.ttf);
+	font-weight: normal;
+}
+
+@font-face { 
+	font-family: 'mplus-1m-bold';
+	src: url(/fonts/mplus-1m-bold.ttf);
+	font-weight: bold;
+}
+
+body{
+    position: relative;
+	font-family: 'mplus-1m-regular','mplus-1m-bold';
+}

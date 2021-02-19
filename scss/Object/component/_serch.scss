@@ -1,0 +1,44 @@
+.c-serch{
+    &--box{
+        border-radius: 8px;
+        width: 230px;
+        height: 46px;
+        border: 1px solid $basefont-color;
+        margin-right: 2px;
+        padding-left: 35px;
+        padding-right: 10px;
+
+        @include mq (tablet){
+            width: 350px;
+        }
+
+    }
+
+    &--button{
+        border-radius: 8px;
+        width: 78px;
+        height: 46px;
+        border: 1px solid $basefont-color;
+        font-size: 16px;
+        margin-left: 2px;
+        background-color: #F2EDE9;
+        transition: background-color 0.3s;
+
+        @include mq (tablet){
+            width: 120px;
+        }
+
+    }
+
+    &--button:hover{
+        cursor: pointer;
+        background-color: #d3cfcad3;
+    }
+
+    &--icon i{
+        columns: #333333;;
+        position: relative;
+        left:35px;
+    }
+
+}

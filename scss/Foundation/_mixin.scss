@@ -1,0 +1,28 @@
+$breakpoints:(
+smartphone: "screen and (max-width: 599px)",
+tablet: "screen and (min-width: 600px)",
+pc: "screen and (min-width: 1200px)",
+);
+
+@mixin mq ($breakpoint) {
+@media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+}
+}
+
+// レスポンシブ対応テスト
+
+@include mq (tablet){
+
+    .c-headline--lv1{
+        color:red;
+    }
+        
+}
+
+@include mq (pc){
+
+    .c-headline--lv1{
+        color:blue;
+    }
+}

@@ -1,0 +1,25 @@
+.l-main-wrap{
+    width: 100%;
+    height: 285px;
+
+    @include mq (pc){
+        height: 430px;
+    }
+
+    &--archive{
+       
+        @include mq (pc){
+         height: 285px;
+        }
+    
+    }
+
+    &--singlepage{
+
+        @include mq (pc){
+            height: 285px;
+        }
+
+    }
+
+}

@@ -1,0 +1,66 @@
+.c-grand-menu{
+
+    &__primary{
+
+        &--menu{
+            list-style: none;
+            position:absolute;
+            top: 150px;
+            left: 46px;
+
+            @include mq (pc){
+                top: 190px;
+                left: 40px;
+            }
+        }
+        
+        &--item > p{
+            color: $basefont-color;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 20px;
+            
+            & :hover {
+                opacity: 0.8;
+                
+            }
+
+            & > a{
+                text-decoration: none;
+                color: $basefont-color;
+            }
+
+        }
+
+
+    }    
+
+    &__secondary{
+        &--menu{
+            list-style: none;
+        }
+
+        &--item{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 18px;
+            color: $basefont-color;
+            cursor: pointer;
+
+            & :hover {
+                opacity: 0.8;
+                
+            }
+            
+
+
+            & > a{
+                text-decoration: none;
+                color: $basefont-color;
+            }
+
+        }
+
+    }
+
+}

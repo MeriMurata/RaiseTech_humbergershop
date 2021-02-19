@@ -1,0 +1,39 @@
+.c-map{
+    background-color: rgba(0, 0, 0, 0.274);
+    height: 415px;
+
+    @include mq (pc){
+        width: 600px;
+        height: 649px;
+    }
+
+    &__title{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    &__bar{
+        border: rgb(255, 255, 255) solid 1px;
+        width: 13%;
+        margin-top: 18px;
+        margin-left: 18px;
+        margin-bottom: 8px;
+
+        @include mq (tablet){
+            width: 8%;
+        }
+
+        @include mq (pc){
+            width: 10%;
+        }
+    }
+
+    &__description{
+        color: white;
+        font-size: 14px;
+        margin-left: 18px;
+        line-height: 36px;
+
+    }
+
+}

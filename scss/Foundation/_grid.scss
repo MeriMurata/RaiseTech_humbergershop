@@ -1,0 +1,102 @@
+@include mq (pc){
+
+    .c-grid{
+        &--front-page{
+            display: grid;
+            grid-template:
+            "header sidebar" 217px
+            "main sidebar" 430px
+            "sub sidebar" 1300px
+            "map sidebar" 649px
+            "footer footer" 150px
+            / 1fr 250px;
+        
+        }
+
+        &--archive{
+            display: grid;
+            grid-template:
+            "header sidebar" 217px
+            "main sidebar" 285px
+            "sub sidebar" 1380px
+            "page-navi sidebar" 170px
+            "footer footer" 150px
+            / 1fr 250px;
+
+            @include mq (pc){
+                grid-template:
+                "header sidebar" 217px
+                "main sidebar" 230px
+                "sub sidebar" 1380px
+                "page-navi sidebar" 170px
+                "footer footer" 150px
+                / 1fr 250px;
+            }
+
+        }
+
+        &--archive-search{
+            display: grid;
+            grid-template:
+            "header sidebar" 217px
+            "main sidebar" 285px
+            "sub sidebar" 2100px
+            "page-navi sidebar" 170px
+            "footer footer" 150px
+            / 1fr 250px;
+        }
+
+        &--singlepage{
+            display: grid;
+            grid-template:
+            "header sidebar" 217px
+            "main sidebar" 345px
+            "sub sidebar" 1fr
+            "footer footer" 150px
+            / 1fr 250px;
+
+
+            @include mq (pc){
+                display: grid;
+                grid-template:
+                "header sidebar" 217px
+                "main sidebar" 225px
+                "sub sidebar" 1fr
+                "footer footer" 150px
+                / 1fr 250px;
+            }
+        }
+
+    }
+
+    
+    .l-sidebar{
+        grid-area: sidebar;
+    }
+    
+    .l-main-wrap{
+        grid-area: main;
+    
+    }  
+    
+    .l-sub--wrap{
+        grid-area: sub;
+    
+    }
+    
+    .l-map{
+        grid-area: map;
+    
+    }
+    
+    .p-page-navi{
+        grid-area: page-navi;
+    }
+
+    .l-footer{
+        grid-area: footer;
+    
+    }
+
+
+}

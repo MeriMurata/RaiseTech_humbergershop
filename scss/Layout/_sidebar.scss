@@ -1,0 +1,36 @@
+.l-sidebar{
+    width: 250px;
+    height: 2716px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: block;
+    transition: 0.3s;
+    overflow-y :scroll;
+
+    @include mq (pc){
+        position: initial;
+        width: 250px;
+        overflow-y:initial;
+        height: 100%;
+    }
+
+}
+
+
+.l-sidebar.open {
+    overflow-y :scroll;
+    width: 250px;
+    height: 2716px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    transition: 0.3s;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display:none;
+    }
+}

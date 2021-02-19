@@ -1,0 +1,33 @@
+.c-place-menu{
+
+    &__name{
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        margin-top:50px;
+        margin-left: 10px;
+
+        @include mq (tablet){
+            font-size: 40px;
+        }
+
+        @include mq (pc){
+            margin-top:30px;
+            font-size: 50px;
+        }
+    }
+
+    &__bar{
+        width: 50px;
+        border: white solid 2px;
+        margin-top:40px;
+        margin-left: 10px;
+
+    }
+
+    &__description{
+        color: white;
+        margin-left:10px;
+    }
+
+}

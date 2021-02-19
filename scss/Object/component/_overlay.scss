@@ -1,0 +1,24 @@
+.c-overlay{
+    top: 0;
+    left: 100%;
+
+    @include mq (pc){
+        display: none;
+    }
+
+}
+
+
+.c-overlay.open{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top:0;
+    left: 0;
+    display: block;
+
+    @include mq (pc){
+        display: none;
+    }
+}

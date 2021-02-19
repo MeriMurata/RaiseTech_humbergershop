@@ -1,0 +1,14 @@
+.p-map{
+    background-image: url(/image/map.png);
+    background-size: cover;
+    height: 691px;
+
+    @include mq (tablet){
+        height: 415px;
+    }
+
+    @include mq (pc){
+        height: 649px;
+    }
+
+}
