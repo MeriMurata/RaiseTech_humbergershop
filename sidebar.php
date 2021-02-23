@@ -3,6 +3,16 @@
             <div class="p-primary-menu">
                 <span class="c-close-button"></span>
                 <p class="c-title--menu__sidebar">Menu</p>
+
+                <?php wp_nav_menu(
+                    array(
+                        'menu_class' =>'p-grand-menu c-grand-menu c-grand-menu__primary--menu',
+                        'container'       => 'ul',
+                        'container_class' => 'p-grand-menu111111',
+                        'menu-class' => 'o-123'
+                )); ?> 
+
+
                 <ul class="p-grand-menu c-grand-menu c-grand-menu__primary--menu">
                     <li class="c-grand-menu__primary--item"><p><a href="#">バーガー</a></p>
                         <ul class="c-grand-menu__secondary--menu">
