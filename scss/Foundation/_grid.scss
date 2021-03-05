@@ -16,20 +16,21 @@
         &--archive{
             display: grid;
             grid-template:
-            "header sidebar" 217px
-            "main sidebar" 285px
-            "sub sidebar" 1380px
-            "page-navi sidebar" 170px
-            "footer footer" 150px
+            "header sidebar" auto
+            "main sidebar" auto
+            "sub sidebar" auto
+            "page-navi sidebar" auto
+            "footer footer" auto
             / 1fr 250px;
 
             @include mq (pc){
                 grid-template:
-                "header sidebar" 217px
-                "main sidebar" 230px
-                "sub sidebar" 1380px
-                "page-navi sidebar" 170px
-                "footer footer" 150px
+                "header sidebar" auto
+                "main sidebar" auto
+                "sub sidebar" auto
+                "page-navi sidebar" auto
+                "map sidebar" auto
+                "footer footer" auto
                 / 1fr 250px;
             }
 

@@ -26,3 +26,24 @@
     }
 
 }
+
+
+.page_item {
+    color: white;
+    padding-left: 10px;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    & > a{
+        color: white;
+        text-decoration: none;
+    }
+
+    &:first-child{
+        border-right: 1px white solid;
+        padding-right: 10px;
+    }
+
+}

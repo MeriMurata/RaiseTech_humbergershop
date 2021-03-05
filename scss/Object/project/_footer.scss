@@ -1,0 +1,13 @@
+.p-footer__navigation{
+    & ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-top: 40px;
+
+        & > span {
+            color: white;
+            padding-left: 8px;
+        }
+    }
+}

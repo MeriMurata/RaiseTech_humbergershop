@@ -12,6 +12,7 @@
                 top: 190px;
                 left: 40px;
             }
+
         }
         
         &--item > p{
@@ -63,4 +64,22 @@
 
     }
 
+}
+
+.sub-menu{
+    padding-top: 10px;
+}
+
+.menu-item{
+    list-style-type:none;
+}
+
+.c-grand-menu__primary--item{
+    padding-top: 20px;
+}
+
+.c-grand-menu__primary--item > a{
+ color: $basefont-color;
+ text-decoration: none;
+ font-size: 20px;
 }

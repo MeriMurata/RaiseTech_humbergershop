@@ -26,3 +26,67 @@
     }
 
 }
+
+
+.current{
+    display:none;
+    color:white;
+    background-color: #3C2B1C;
+
+    @include mq (tablet){
+        display: block;
+        text-decoration: none;
+        margin-top: 80px;
+        margin-bottom: 14px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 2px;
+        border: solid #cccccc 2px;
+        color: $basefont-color;
+        font-weight: bold;
+        font-size: 14px;
+
+    }
+}
+
+.page{
+    display:none;
+
+    @include mq (tablet){
+        display: block;
+        text-decoration: none;
+        margin-top: 80px;
+        margin-bottom: 14px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 2px;
+        border: solid #cccccc 2px;
+        color: $basefont-color;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.page:hover{
+    opacity: 0.8;
+}
+
+.extend{
+    display: none;
+}
+
+.first{
+    display: none;
+}
+
+.last{
+    display: none;
+}

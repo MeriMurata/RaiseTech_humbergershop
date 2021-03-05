@@ -30,11 +30,12 @@
 
     }
 
-    &--singlepage{
-        background-image: url(../image/single_hero.png);
+    &--singlepage img {
+        // background-image: url(../image/single_hero.png);
         background-size :190%;
         height: 345px;
-        background-position: center;
+        // background-position: center;
+        object-fit: cover;
 
         @include mq (tablet){
             background-size :110%;
