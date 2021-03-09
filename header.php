@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
-   <title>front-page</title>
+   <title> <?php wp_title(); ?></title>
 </head>
 <body>
     <div class="c-grid--archive">

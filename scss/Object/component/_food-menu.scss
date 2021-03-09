@@ -29,7 +29,7 @@
             background-position: center;
             height: 100%;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
 
         }
 
@@ -45,8 +45,9 @@
     &__title{
         color: white;
         font-weight: normal;
-        padding-top: 25px;
+        padding-top: 45px;
         padding-left: 10px;
+        font-size: 38px;
 
         @include mq (tablet){
             padding-left: 40px;
@@ -54,6 +55,7 @@
     }
 
     &__headline{
+        display: none;
         color: white;
         font-weight: normal;
         padding-top: 25px;
@@ -69,7 +71,7 @@
     &__description p{
         color: white;
         font-weight: normal;
-        margin-top: 10px;
+        margin-top: 30px;
         padding-left: 10px;
 
         @include mq (tablet){

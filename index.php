@@ -7,7 +7,7 @@
 </main>
 <section class="l-sub--wrap p-place-menu">
     <div class="p-place-menu--takeout">
-        <p class="c-place-menu__name">Take Out</p>
+        <p class="c-place-menu__name"><a href=<?php echo get_category_link(get_cat_ID('Take out')); ?>>Take out</a></p>
         <p class="c-place-menu__bar"></p>
         <div class="p-place-menu--wrap">
             <div class="p-place-menu__content">
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="p-place-menu--eatin">
-        <p class="c-place-menu__name">Eat In</p>
+        <p class="c-place-menu__name"><a href=<?php echo get_category_link(get_cat_ID('Eat In')); ?>>Eat In</a></p>
         <p class="c-place-menu__bar"></p>
         <div class="p-place-menu--wrap">
             <div class="p-place-menu__content">

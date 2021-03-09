@@ -3,7 +3,7 @@
         <main class="l-main-wrap--archive">
                 <div class="p-hero--archive">
                     <h2 class="c-headline--lv2__archive">Menu:<p>
-                    <?php $category = get_the_category(); $cat_name = $category[0]->cat_name; echo $cat_name; ?>
+                    <?php single_cat_title(); ?>
                     </p></h2>
                 </div>
             </main>

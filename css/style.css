@@ -529,6 +529,26 @@ table {
   padding: 0;
 }
 
+.not_find {
+  font-size: 40px;
+}
+
+.wp-caption {
+  font-size: 1.3rem;
+}
+
+.wp-caption-text {
+  font-size: 1.3rem;
+}
+
+.sticky {
+  font-size: 1.3rem;
+}
+
+.screen-reader-text {
+  font-size: 1.3rem;
+}
+
 @font-face {
   font-family: 'mplus-1m-regular';
   src: url(/fonts/mplus-1m-regular.ttf);
@@ -567,6 +587,7 @@ body {
 .l-sidebar {
   width: 250px;
   height: 2716px;
+  min-height: 1200px;
   position: fixed;
   top: 0;
   right: -100%;
@@ -574,6 +595,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-y: scroll;
+  z-index: 100;
 }
 
 @media screen and (min-width: 1200px) {
@@ -589,6 +611,7 @@ body {
   overflow-y: scroll;
   width: 250px;
   height: 2716px;
+  min-height: 1200px;
   position: fixed;
   top: 0;
   right: 0;
@@ -622,7 +645,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .l-main-wrap--singlepage {
-    height: 285px;
+    height: 450px;
   }
 }
 
@@ -952,7 +975,9 @@ body {
   color: #707070;
 }
 
-.c-place-menu__name {
+.c-place-menu__name > a {
+  text-decoration: none;
+  display: block;
   color: white;
   font-weight: bold;
   font-size: 32px;
@@ -961,13 +986,13 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  .c-place-menu__name {
+  .c-place-menu__name > a {
     font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .c-place-menu__name {
+  .c-place-menu__name > a {
     margin-top: 30px;
     font-size: 50px;
   }
@@ -1010,26 +1035,40 @@ body {
   opacity: 0.8;
 }
 
-.c-footer__navigation__item a {
-  color: white;
-  text-decoration: none;
-}
-
-.page_item {
+.c-footer__navigation__item {
   color: white;
   padding-left: 10px;
 }
 
-.page_item:hover {
+.c-footer__navigation__item:hover {
   opacity: 0.8;
 }
 
-.page_item > a {
+.c-footer__navigation__item > a {
   color: white;
   text-decoration: none;
 }
 
-.page_item:first-child {
+.c-footer__navigation__item:first-child {
+  border-right: 1px white solid;
+  padding-right: 10px;
+}
+
+.menu_item {
+  color: white;
+  padding-left: 10px;
+}
+
+.menu_item:hover {
+  opacity: 0.8;
+}
+
+.menu_item > a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu_item:first-child {
   border-right: 1px white solid;
   padding-right: 10px;
 }
@@ -1211,6 +1250,7 @@ body {
 }
 
 .c-overlay.open {
+  z-index: 100;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1266,8 +1306,8 @@ body {
   background-position: center;
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 600px) {
@@ -1279,8 +1319,9 @@ body {
 .c-food-menu__title {
   color: white;
   font-weight: normal;
-  padding-top: 25px;
+  padding-top: 45px;
   padding-left: 10px;
+  font-size: 38px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1290,6 +1331,7 @@ body {
 }
 
 .c-food-menu__headline {
+  display: none;
   color: white;
   font-weight: normal;
   padding-top: 25px;
@@ -1306,7 +1348,7 @@ body {
 .c-food-menu__description p {
   color: white;
   font-weight: normal;
-  margin-top: 10px;
+  margin-top: 30px;
   padding-left: 10px;
 }
 
@@ -1829,11 +1871,31 @@ body {
   }
 }
 
+.p-hero--singlepage {
+  position: relative;
+}
+
+.p-hero--singlepage h1 {
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-hero--singlepage h1 {
+    top: 120px;
+  }
+}
+
 .p-hero--singlepage img {
-  background-size: 190%;
+  background-size: 100%;
   height: 345px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 @media screen and (min-width: 600px) {
@@ -1844,7 +1906,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .p-hero--singlepage img {
-    height: 225px;
+    height: 450px;
     background-size: 100%;
     background-position-y: 50%;
     background-position-x: 100%;
@@ -2123,7 +2185,7 @@ body {
   opacity: 0.8;
 }
 
-.p-footer__navigation ul {
+.p-footer__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2132,10 +2194,5 @@ body {
           justify-content: center;
   list-style: none;
   padding-top: 40px;
-}
-
-.p-footer__navigation ul > span {
-  color: white;
-  padding-left: 8px;
 }
 /*# sourceMappingURL=style.css.map */

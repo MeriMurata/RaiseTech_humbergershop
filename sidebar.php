@@ -10,7 +10,6 @@
                         'menu' => 'categorymenu',
                         'menu_class' => 'p-grand-menu c-grand-menu c-grand-menu__primary--menu',
                         'container' => 'nav',
-                        'container_class' => 'muratamutat', //temp
                         'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                       )
                     );

@@ -1,12 +1,14 @@
 .l-sidebar{
     width: 250px;
     height: 2716px;
+    min-height: 1200px;
     position: fixed;
     top: 0;
     right: -100%;
     display: block;
     transition: 0.3s;
     overflow-y :scroll;
+    z-index: 100;
 
     @include mq (pc){
         position: initial;
@@ -22,6 +24,7 @@
     overflow-y :scroll;
     width: 250px;
     height: 2716px;
+    min-height: 1200px;
     position: fixed;
     top: 0;
     right: 0;
