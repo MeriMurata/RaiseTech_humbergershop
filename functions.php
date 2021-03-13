@@ -46,22 +46,5 @@ function hamburger_script(){
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
-//ウィジェットの有効化　> 用途に適さなかったため、適用なし。
-// function hamburger_widgets_init() {
-//     register_sidebar (
-//         array(
-//             'name'          => 'カテゴリーウィジェット',
-//             'id'            => 'category_widget',
-//             'description'   => 'カテゴリー用ウィジェットです',
-//             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//             'after_widget'  => '</div>',
-//             'before_title'  => '<h2><i class=" aria-hidden="true"></i>',
-//                                '<li class="c-grand-menu__primary--item"><p><a href="#">バーガー</a></p>'
-//             'after_title'   => "</h2>\n",
-//         )
-//     );
-// }
-// add_action( 'widgets_init', 'hamburger_widgets_init' );
-
 
 

@@ -587,7 +587,7 @@ body {
 .l-sidebar {
   width: 250px;
   height: 2716px;
-  min-height: 1200px;
+  min-height: 1700px;
   position: fixed;
   top: 0;
   right: -100%;
@@ -611,7 +611,7 @@ body {
   overflow-y: scroll;
   width: 250px;
   height: 2716px;
-  min-height: 1200px;
+  min-height: 1700px;
   position: fixed;
   top: 0;
   right: 0;
@@ -739,6 +739,10 @@ body {
   text-align: center;
   padding-top: 50px;
   color: #707070;
+}
+
+.c-headline--lv1 :hover {
+  opacity: 0.8;
 }
 
 .c-headline--lv1 > a {
@@ -1047,6 +1051,7 @@ body {
 .c-footer__navigation__item > a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .c-footer__navigation__item:first-child {
@@ -1114,8 +1119,8 @@ body {
 }
 
 .c-grand-menu__secondary--item {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 18px;
   color: #707070;
   cursor: pointer;
@@ -1128,6 +1133,7 @@ body {
 .c-grand-menu__secondary--item > a {
   text-decoration: none;
   color: #707070;
+  font-size: 16px;
 }
 
 .sub-menu {
@@ -1343,6 +1349,10 @@ body {
   .c-food-menu__headline {
     padding-left: 40px;
   }
+}
+
+.c-food-menu__description h2 {
+  display: none;
 }
 
 .c-food-menu__description p {

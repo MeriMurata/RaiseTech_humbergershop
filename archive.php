@@ -6,7 +6,7 @@
                     <?php single_cat_title(); ?>
                     </p></h2>
                 </div>
-            </main>
+        </main>
             
         <section class="l-sub--archive">
            <h4 class="c-headline--lv4__archive">小見出しが入ります</h4>

@@ -6,8 +6,14 @@
         padding-top: 50px;
         color: $basefont-color;
 
+        & :hover{
+            opacity: 0.8;
+        }
+
         & > a{
             cursor: pointer;
+
+
         }
 
         &__singlepage{
