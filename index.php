@@ -8,7 +8,7 @@
 <section class="l-sub--wrap p-place-menu">
     <div class="p-place-menu--takeout">
         <p class="c-place-menu__name"><a href=<?php echo get_category_link(get_cat_ID('Take out')); ?>>Take out</a></p>
-        <p class="c-place-menu__bar"></p>
+        <span class="c-place-menu__bar"></span>
         <div class="p-place-menu--wrap">
             <div class="p-place-menu__content">
                 <h4 class="c-headline--lv4">小見出しが入ります</h4>
@@ -22,7 +22,7 @@
     </div>
     <div class="p-place-menu--eatin">
         <p class="c-place-menu__name"><a href=<?php echo get_category_link(get_cat_ID('Eat In')); ?>>Eat In</a></p>
-        <p class="c-place-menu__bar"></p>
+        <span class="c-place-menu__bar"></span>
         <div class="p-place-menu--wrap">
             <div class="p-place-menu__content">
                 <h4 class="c-headline--lv4">小見出しが入ります</h4>
@@ -39,7 +39,7 @@
     <div class="p-map">
         <div class="c-map">
             <div class="c-map__title"><h3 class="c-headline--lv3">見出しが入ります</h3></div>
-            <p class="c-map__bar"></p>
+            <span class="c-map__bar"></span>
             <p class="c-map__description">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>

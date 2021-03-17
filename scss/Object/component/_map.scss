@@ -13,6 +13,7 @@
     }
 
     &__bar{
+        display:inline-block;
         border: rgb(255, 255, 255) solid 1px;
         width: 13%;
         margin-top: 18px;
@@ -37,3 +38,4 @@
     }
 
 }
+

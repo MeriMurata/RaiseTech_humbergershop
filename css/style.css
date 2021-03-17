@@ -1003,6 +1003,7 @@ body {
 }
 
 .c-place-menu__bar {
+  display: inline-block;
   width: 50px;
   border: white solid 2px;
   margin-top: 40px;
@@ -1218,6 +1219,7 @@ body {
 }
 
 .c-map__bar {
+  display: inline-block;
   border: white solid 1px;
   width: 13%;
   margin-top: 18px;
